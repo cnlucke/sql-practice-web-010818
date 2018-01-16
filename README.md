@@ -38,7 +38,7 @@ CREATE TABLE fans (id INTEGER PRIMARY KEY, name TEXT);
   ```
   5. How would you add yourself as a fan of the Black Eyed Peas?
   ```sql
-  INSERT INTO fans VALUES (1, "Cristy Lucke", 169);
+  INSERT INTO fans (name, artist_id) VALUES ("Cristy Lucke", 169);
   ```
 
 
