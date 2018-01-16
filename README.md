@@ -28,8 +28,7 @@ SELECT * FROM artists WHERE name = "Black Sabbath";
 3. How would you create a table named 'fans' with an autoincrementing ID that's a primary key and a name field of type text
 
 ```sql
-CREATE TABLE fans (id INTEGER PRIMARY KEY,
-  name TEXT);
+CREATE TABLE fans (id INTEGER PRIMARY KEY, name TEXT);
   ```
 
   4. How would you alter the fans table to have a artist_id column type integer?
