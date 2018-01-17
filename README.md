@@ -85,7 +85,7 @@ CREATE TABLE fans (id INTEGER PRIMARY KEY, name TEXT);
   INNER JOIN albums ON artists.ArtistId = albums.ArtistId
   INNER JOIN tracks ON albums.AlbumId = tracks.AlbumId
   INNER JOIN genres ON tracks.GenreId = genres.GenreId
+  WHERE genres.Name = "Rock" AND count > 30
   GROUP BY artists.Name
-  HAVING genres.Name = "Rock" AND count > 30
   ORDER BY count DESC;
   ```
